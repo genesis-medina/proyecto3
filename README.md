@@ -7,10 +7,12 @@ Tops de música variada clasificando premios Grammy y vistas en youtube
 Los principales usuarios son las personas quienes quieran saber cuales han sido las mejores canciones de las ultimas décadas.
 
 
+
 ¿Cuáles son los objetivos de estos usuarios en relación con tu producto?
 
 El objetivo de nuestros usuarios es de conocer cuales fueron las mejores canciones de las ultimas década y/o 
 encontrar una canción por medio de nuestro reproductor añadido en las paginas que muestran la información.
+
 
 
 ¿Cómo crees que el producto que estás creando está resolviendo sus problemas?
