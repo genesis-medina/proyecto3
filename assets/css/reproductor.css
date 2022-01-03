@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+}
+.contenedor{
+    background: linear-gradient(to right, rgba(2, 2, 2, 0.726) 15%, rgba(8, 8, 8, 0.993)), url(../img/fondo.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.i-logo{
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-weight: bold;
+}
+
+.login{
+    margin-top: 25px;
+    width: 25%;
+    text-align: center;
+    width: 25%;
+    border-top: solid 5px white;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 450px) {
+  .login{
+      width: 70%;
+  }
+}
+@media screen and (max-width: 520px) {
+    .login{
+        width: 100%;
+    }
+  }
+.contenedor-input{
+    width: 100%;
+}
+.input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    background: rgba(20, 20, 20, 0.11);
+    border: solid .5px white;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding:5px;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    border: solid .1px rgba(255, 255, 255, 0.418);
+    padding: 1px;
+    border-radius: 25px;
+    
+}
+.btn:hover{
+    background: #08b857dc;
+}
+.btn-green{
+    background: #08b857;
+    width: 80%;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/*------------------APP----------------------*/
+.app{
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    font-family: 'Architects Daughter', sans-serif;
+    color: #131212b0;
+}
+.album{
+     background-image: url(fongo.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    right: 0;
+    overflow: scroll;
+}
+.menu-aside{
+    height: 85vh;
+    background: rgb(19, 18, 18);
+    width: 20vw;
+}
+.reproducir{
+    height: 15vh;
+    width: 98.8vw;
+    background: rgba(12, 12, 12, 0.37);
+    position: fixed;
+}
+/*logo*/
+.i-logo2{
+    font-size: 35px;
+}
+.logo{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+.user{
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.user:hover + .animate{
+    width: 100%;
+    transition: all ease .6s;
+}
+.animate{
+    border-bottom: solid .3px #ffffff88;
+    width: 50%;
+    margin: auto auto;
+    margin-bottom: 15px;
+    transition: all ease-in .6s;
+}
+.user-desc{
+    font-size: 20px;
+    transition: all ease-in-out .6s;
+}
+.user-desc:hover{
+    color: #08b857dc;
+    transition: all ease-in-out .6s;
+}
+.user-desc i{
+    margin-right: 10px;
+}
+
+
+
+.acciones{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reaccion-inactiva,.play-music,.control{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.album-description{
+    font-size: 33px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.title h2{
+    font-size: 35px;
+    color: white;
+}
+
+  .reaccion-activa-reproducida{
+    background: rgb(3, 158, 73);
+    font-size: 30px;
+    
+  }
+  @keyframes latir{
+    0% {
+      opacity:1;
+      transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    25% {
+      opacity:1;
+      transform:  scaleX(0.95) scaleY(0.95) ;
+    }
+    50% {
+      opacity:1;
+      transform:  scaleX(1.40) scaleY(1.40) ;
+    }
+
+  }
+.album-list-music{
+    margin-top: 20px;
+}
+
+.name{
+    display: inline-block;
+}
+.play-music{
+    margin-top: 0;
+}
+
+
+
+.reproducir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+
+.controles{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.control{
+    margin: 5px;
+}
+a img{
+    display: none;
+}
+/*Para ocultar text movil*/
+@media screen and (max-width: 450px) {
+    .album-description{
+        display:list-item;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .description{
+        color: rgb(14, 13, 13);
+        font-size:0;
+    }
+    .acciones input{
+        width: 87%;
+    }
+    #reaccion{
+        display: none;
+    }
+    .title h2{
+        text-align: center;
+        font-size: 12px;
+    }
+    /*.title span{
+        display:ruby-base-container;
+    }*/
+    .app{
+        height:80vh;
+    }
+    .reproducir{
+        height:10vh;
+        align-items:flex-start;
+        padding-top:6px;
+        
+    }
+    .i-logo,.play{
+        font-size: 1rem;
+    }
+    .menu-aside{
+        width: 30vw;
+    }
+    .album{
+        width: 70vw;
+    }
+    
+    
+    .time{
+        display: none;
+    }
+  }
+
+.papita{
+    background-color: rgba(0, 0, 0, 0);
+    width: 600px;
+    height: 250px;
+    margin-left: 60px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+h6{
+   font-size: 22px;
+   color: white;
+}
+

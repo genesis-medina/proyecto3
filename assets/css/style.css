@@ -1,0 +1,16 @@
+#chartContainer {
+    width: 800px;
+    height: 500px;
+    margin: 100px auto;
+}
+
+#table {
+    margin: 20px auto;
+}
+
+#table, #table th, #table td {
+    text-align: center;
+    border: 3px solid rgb(123, 159, 180);
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
